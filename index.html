@@ -1,47 +1,10 @@
 <!doctype html>
-<html lang="id">
-<head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<title>Beresin</title>
-<meta name="description" content="Kelola jadwal, booking, invoice & keuangan bisnis jasa — by FF Agency">
-<meta name="theme-color" content="#0D0D0D">
-<link rel="manifest" href="manifest.json">
-<link rel="icon" href="img/icon.svg" type="image/svg+xml">
-<link rel="apple-touch-icon" href="img/ikon-192.png">
-<link rel="stylesheet" href="app.css?v=31">
-</head>
-<body>
-<aside class="samping" id="samping">
-  <a class="logo" href="#/beranda" aria-label="Beresin"><img src="img/beresin_logo_terang.svg" alt="beresin"></a>
-  <nav id="navSamping"></nav>
-  <div class="samping-bawah"><span class="by">by <b>FF Agency</b></span></div>
-</aside>
-<header class="atas">
-  <a class="logo-hp" href="#/beranda"><img src="img/beresin_logo_terang.svg" alt="beresin"></a>
-  <label class="cari-atas"><svg class="ik" viewBox="0 0 24 24"><circle cx="11" cy="11" r="7"/><path d="M20 20l-3.5-3.5"/></svg><input id="cariAtas" type="search" placeholder="Cari klien, booking, invoice…" autocomplete="off"></label>
-  <button class="ikon-btn lonceng" data-act="go" data-v="notif" aria-label="Notifikasi"><svg class="ik" viewBox="0 0 24 24"><path d="M6 16V11a6 6 0 0 1 12 0v5l1.5 2h-15z"/><path d="M10 20a2 2 0 0 0 4 0"/></svg><span id="badgeNotif" hidden></span></button>
-  <button class="btn btn-merah tambah-atas" data-act="menuTambah"><svg class="ik" viewBox="0 0 24 24"><path d="M12 5v14M5 12h14"/></svg>Tambah</button>
-</header>
-<main id="view" tabindex="-1"></main>
-<nav class="bawah" id="navBawah"></nav>
-<div id="modal" class="modal" hidden></div>
-<div id="toast" class="toast" role="status" aria-live="polite"></div>
-<input type="file" id="filePulih" accept="application/json" hidden>
-<input type="file" id="fileGambar" accept="image/*" multiple hidden>
-<script src="js/core.js?v=31"></script>
-<script src="js/ui.js?v=31"></script>
-<script src="js/v_beranda.js?v=31"></script>
-<script src="js/v_booking.js?v=31"></script>
-<script src="js/v_klien.js?v=31"></script>
-<script src="js/v_uang.js?v=31"></script>
-<script src="js/v_publik.js?v=31"></script>
-<script src="js/v_lain.js?v=31"></script>
-<script src="js/poster.js?v=31"></script>
-<script src="js/lisensi.js?v=31"></script>
-<script src="js/sinkron.js?v=31"></script>
-<script src="js/rekap.js?v=31"></script>
-<script src="js/tautan.js?v=31"></script>
-<script src="js/app.js?v=31"></script>
-</body>
-</html>
+<html lang="id"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Beresin pindah alamat</title>
+<script>
+/* Beresin pindah ke https://beresinid.github.io/ — semua link lama (booking, invoice, landing, panduan) diteruskan */
+(function () {
+  var sisa = location.pathname.replace(/^\/beresin\/?/, '').replace(/^index\.html$/, '');
+  location.replace('https://beresinid.github.io/' + sisa + location.search + location.hash);
+})();
+</script></head><body style="font-family:system-ui;background:#F4F2F2;padding:24px">
+<p>Beresin pindah ke <a href="https://beresinid.github.io/">beresinid.github.io</a>. Membuka…</p></body></html>

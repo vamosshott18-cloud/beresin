@@ -1,12 +1,10 @@
 <!doctype html>
-<html lang="id"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Beresin</title>
+<html lang="id"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Beresin pindah alamat</title>
 <script>
-/* link pendek: /beresin/<nama-usaha>, /beresin/i/<id> → aplikasi #/s/<id> */
+/* Beresin pindah ke https://beresinid.github.io/ — semua link lama (booking, invoice, landing, panduan) diteruskan */
 (function () {
-  var p = location.pathname, gh = /\.github\.io$/.test(location.hostname);
-  var dasar = gh ? '/' + p.split('/')[1] + '/' : '/';
-  var sisa = p.slice(dasar.length).replace(/\/+$/, '');
-  if (sisa && /^([icm]\/)?[A-Za-z0-9-]{1,40}$/.test(sisa)) location.replace(dasar + '#/s/' + sisa);
-  else location.replace(dasar);
+  var sisa = location.pathname.replace(/^\/beresin\/?/, '').replace(/^index\.html$/, '');
+  location.replace('https://beresinid.github.io/' + sisa + location.search + location.hash);
 })();
-</script></head><body style="font-family:system-ui;background:#F4F2F2"><p style="padding:24px">Membuka Beresin…</p></body></html>
+</script></head><body style="font-family:system-ui;background:#F4F2F2;padding:24px">
+<p>Beresin pindah ke <a href="https://beresinid.github.io/">beresinid.github.io</a>. Membuka…</p></body></html>
